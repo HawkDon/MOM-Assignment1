@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= title
+    form(name="send-message", method="post")
+        div.input
+            span.label Message
+            input(type="text", name="message")
+        div.actions
+            input(type="submit", value="send")
